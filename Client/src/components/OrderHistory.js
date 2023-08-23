@@ -12,7 +12,7 @@ function OrderHistory() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/orders");
+      const response = await axios.get("https://plotline-project.onrender.com/orders");
       setOrders(response.data);
     } catch (error) {
       console.error("Error fetching orders:", error);

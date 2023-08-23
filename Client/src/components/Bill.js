@@ -20,7 +20,7 @@ function Bill() {
     };
 
     try {
-      const response = await axios.post("http://localhost:4000/orders", orderData);
+      const response = await axios.post("https://plotline-project.onrender.com/orders", orderData);
       console.log("Order placed:", response.data);
     } catch (error) {
       console.error("Error placing order:", error);

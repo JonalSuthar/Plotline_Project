@@ -4,7 +4,7 @@ import {
   USER_LOGIN_REQUEST,
   USER_LOGIN_SUCCESS,
 } from "../constants/user_constant";
-const API_URL = "localhost:4000/auth"
+const API_URL = "https://plotline-project.onrender.com/auth"
 export const login = (email, password) => async (dispatch) => {
   try {
     dispatch({ type: USER_LOGIN_REQUEST });

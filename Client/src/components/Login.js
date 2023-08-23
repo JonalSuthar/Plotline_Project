@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 // import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
-const API_URL = 'http://localhost:4000/auth';
+const API_URL = 'https://plotline-project.onrender.com/auth';
 
 function Login() {
  

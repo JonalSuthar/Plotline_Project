@@ -4,23 +4,29 @@ import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
   const { name } = myData;
-  let email =localStorage.getItem('userEmail')
-  email = JSON.parse(email)
+  let email = localStorage.getItem("userEmail");
+  email = JSON.parse(email);
   return (
     <Wrapper>
       <div className="container">
         <div className="grid grid-two-column">
           <div className="hero-section-data">
-            <p className="intro-data">Welcome <span>{email}</span> to </p>
+            <p className="intro-data">
+              Welcome to{" "}
+            </p>
             <h1> {name} </h1>
             <p>
-              An online billing system is essential for businesses to manage
-              their invoicing, payments, and financial transactions efficiently.
-              Your task is to develop a Node.js server for a billing system that
-              provides seamless functionality and a user-friendly experience.
+              Welcome to Plotline, where passion for product
+              meets unparalleled customer service. Our handpicked products
+              collection reflects our commitment to quality and style.
+              Join us in exploring a world of products and services that's
+              thoughtfully curated for your unique taste. At Brand,
+              we're more than a shopping destination – we're a community
+              dedicated to enhancing your product experience. Join us
+              today and discover the difference.
             </p>
-            <NavLink to='/products'>
-              <Button>shop now</Button>
+            <NavLink to="/products">
+              <Button>Shop here</Button>
             </NavLink>
           </div>
           {/* our homepage image  */}
@@ -41,8 +47,8 @@ const HeroSection = ({ myData }) => {
 
 const Wrapper = styled.section`
   padding: 12rem 0;
-  span{
-    color: purple;
+  span {
+    color: #cc980a;
   }
   img {
     min-width: 10rem;
@@ -61,8 +67,7 @@ const Wrapper = styled.section`
 
     .intro-data {
       margin-bottom: 0;
-      font-size: x-large
-
+      font-size: x-large;
     }
   }
 

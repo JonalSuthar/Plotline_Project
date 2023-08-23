@@ -11,13 +11,13 @@ const Footer = () => {
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
-              <h3>Improve funnel metrics with Plotline</h3>
+              <h3>Buy your products from Plotline</h3>
               <h3>Ready to get started?</h3>
             </div>
 
             <div>
               <Button className="btn hireme-btn">
-                <NavLink to=""> GET started </NavLink>
+                <NavLink to="/signin"> GET started </NavLink>
               </Button>
             </div>
           </div>

@@ -5,7 +5,7 @@ import { Button } from "../styles/Button";
 // import { BrowserRouter as  Redirect } from 'react-router-dom';
 // import { Redirect } from 'react-router-dom';
 
-const API_URL = "http://localhost:4000/auth/register";
+const API_URL = "https://plotline-project.onrender.com/auth/register";
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

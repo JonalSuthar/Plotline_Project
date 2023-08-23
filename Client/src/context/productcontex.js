@@ -4,7 +4,10 @@ import reducer from "../reducer/productReducer";
 
 const AppContext = createContext(); 
 
-const API = "http://localhost:4000/products";
+// const API = "http://localhost:4000/products";
+const API = "https://plotline-project.onrender.com/products"
+
+
 
 const initialState = {
   isLoading: false,

@@ -11,7 +11,8 @@ import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Star from "./components/Star";
 import AddToCart from "./components/AddToCart";
 
-const API = "http://localhost:4000/products";
+// const API = "http://localhost:4000/products";
+const API = "https://plotline-project.onrender.com/products"
 const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useProductContext();

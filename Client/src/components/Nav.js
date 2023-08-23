@@ -230,7 +230,7 @@ const Nav = () => {
           </li>
          
             
-            <h3>{email}</h3>
+            <h3>User: {email}</h3>
             
             <Button onClick={redirectToHome}>Log In</Button>
          
