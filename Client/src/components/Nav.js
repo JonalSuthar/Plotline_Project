@@ -15,7 +15,7 @@ const Nav = () => {
   const { total_item } = useCartContext();
   let email =localStorage.getItem('userEmail')
   email = JSON.parse(email)
-  email = email.toUpperCase()
+  // email = email.toUpperCase()
   useEffect(() => {
     async function fetchUserData() {
       try {

@@ -21,10 +21,10 @@ function Login() {
 
 
   const handleLogin = async () => {
-    const userData = {
-      email,
-      password,
-    };
+    // const userData = {
+    //   email,
+    //   password,
+    // };
 
     try {
       const response = await axios.post(`${API_URL}/login`, {email,password});
@@ -35,7 +35,7 @@ function Login() {
         // localStorage.setItem('token', token);
         // e.preventDefault();
         // loginCall({ email: email.current.value }, dispatch);
-        const decodedToken = jwt_decode(token);
+        // const decodedToken = jwt_decode(token);
 
         console.log('Response data:', response.data)
         const userEmail = response.data.getemail

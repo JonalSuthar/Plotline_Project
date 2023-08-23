@@ -34,7 +34,7 @@ const SingleProduct = () => {
   useEffect(() => {
     console.log("Fetching product for id:", id);
     getSingleProduct(`${API}/${id}`);
-  }, [id]);
+  }, [id]); 
   
   if (isSingleLoading) {
     return <div className="page_loading">Loading.....</div>;
