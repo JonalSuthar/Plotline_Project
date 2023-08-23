@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
-import { Tick } from "react-crude-animated-tick";
 function Ordered() {
   return (
     <Wrapper>
@@ -10,7 +9,7 @@ function Ordered() {
         <div>
           {/* <h2>Done</h2> */}
           <div>
-            <Tick size={200} />
+       
           </div>
           <h3>Order Confirmed</h3>
           <p>Your order will be Delivered soon!</p>
