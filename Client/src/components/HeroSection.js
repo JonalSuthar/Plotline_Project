@@ -4,8 +4,8 @@ import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
   const { name } = myData;
-  let email = localStorage.getItem("userEmail");
-  email = JSON.parse(email);
+  // let email = localStorage.getItem("userEmail");
+  // email = JSON.parse(email);
   return (
     <Wrapper>
       <div className="container">

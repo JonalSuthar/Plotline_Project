@@ -107,31 +107,35 @@ const cartReducer = (state, action) => {
 
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
-    let { total_item, total_price,tax_fee,tax} = state.cart.reduce(
+    if (!state.cart) {
+      return state; // or handle this case accordingly
+    }
+    
+    let { total_item, total_price, tax_fee, tax } = state.cart.reduce(
       (accum, curElem) => {
         let { price, amount } = curElem;
-        if(price>100 && price<5000){
-          accum.tax = .12;
+        if (price > 100 && price < 5000) {
+          accum.tax = 0.12;
         }
-        if(price>5000){
-          accum.tax = .18
+        if (price > 5000) {
+          accum.tax = 0.18;
         }
         accum.total_item += amount;
         accum.total_price += price * amount;
-        if(price>1000 && price<5000){
-          accum.tax_fee+=price*amount*accum.tax
+        if (price > 1000 && price < 5000) {
+          accum.tax_fee += price * amount * accum.tax;
         }
-        if(price>5000){
-          accum.tax_fee+=price*amount*accum.tax
+        if (price > 5000) {
+          accum.tax_fee += price * amount * accum.tax;
         }
-
+  
         return accum;
       },
       {
         total_item: 0,
         total_price: 0,
-        tax_fee:0,
-        tax:0
+        tax_fee: 0,
+        tax: 0,
       }
     );
     return {
@@ -139,9 +143,10 @@ const cartReducer = (state, action) => {
       total_item,
       total_price,
       tax_fee,
-      tax
+      tax,
     };
   }
+  
 
   return state;
 };

@@ -19,7 +19,7 @@ const Nav = () => {
   useEffect(() => {
     async function fetchUserData() {
       try {
-        const response = await axios.get('http://localhost:4000/auth/login', {
+        const response = await axios.get('https://plotline-project.onrender.com/auth/login', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         console.log(response.data)

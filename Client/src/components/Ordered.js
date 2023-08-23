@@ -41,3 +41,4 @@ const Wrapper = styled.section`
   }
 `;
 export default Ordered;
+  

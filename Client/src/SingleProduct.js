@@ -8,7 +8,7 @@ import { Container } from "./styles/Container";
 import FormatPrice from "./Helpers/FormatPrice";
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import Star from "./components/Star";
+// import Star from "./components/Star";
 import AddToCart from "./components/AddToCart";
 
 // const API = "http://localhost:4000/products";

@@ -4,7 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Products from "./Products";
 import Contact from "./Contact";
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 import Cart from "./Cart";
 import SingleProduct from "./SingleProduct";
 import ErrorPage from "./ErrorPage";
@@ -16,7 +16,7 @@ import SignIn from "./components/SignIn";
 import Login from "./components/Login"
 import Bill from "./components/Bill";
 import Ordered from "./components/Ordered";
-import AuthContext from "./store"
+// import AuthContext from "./store"
 import OrderHistory from "./components/OrderHistory";
 const App = () => {
   // const { user } = useContext(AuthContext);
